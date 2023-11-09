@@ -1,0 +1,83 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+iframe, video {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 10px 0;
+}
+
+button {
+  
+    background-color: #7c3aed;
+    color: #ffffff;
+    border: none;
+    padding: 8px 200px; /* Reducimos el padding */
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: background-color 0.3s, transform 0.2s, color 0.3s;
+    margin: 5px 0px; /* Reducimos el margen */
+}
+
+button:hover {
+    color: #000000;
+    background-color: #bac0f6;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.9);
+    background-color: #496ddb;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button.animate {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+}
+
+.form-box {
+    text-align: center;
+    padding: 10px; /* Reducimos el padding */
+    background-color: #3c3c3c;
+    box-shadow: 0 0 20px #496ddb;
+    border-radius: 5px;
+    margin-top: 5px; /* Reducimos el margen-top */
+    max-width: 500px;
+    width: 80%;
+    max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
+    
+}
