@@ -42,10 +42,9 @@ body {
     text-align: center;
     padding: 30px;
     background-color: #3c3c3c;
-    box-shadow: 0 0 100px #496ddb;
     border-radius: 20px;
     margin-top: 30px;
-    max-width: 1000px; /* Aumentamos el ancho máximo del contenedor */
+    max-width: 1000px; 
   }
   
   h1, p {
@@ -131,19 +130,13 @@ body {
     justify-content: center;
     margin: 30px;
     padding: 30px;
-    border: 2px solid #496ddb;
-    border-radius: 20px; /* Aumentamos el radio de la esquina del borde */
-    max-width: 1000px; /* Aumentamos el ancho máximo del contenedor */
+  
+    border-radius: 20px; 
+    max-width: 1000px;
+    box-shadow: 0 0 10px #496ddb;
   }
   
   .label-url {
     color: #ffffff;
-  }
-  
-  /* Agregamos una consulta de medios para dispositivos más pequeños */
-  @media only screen and (max-width: 600px) {
-    .start-button {
-      padding: 10px 20px;
-    }
   }
   
