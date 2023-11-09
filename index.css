@@ -32,7 +32,9 @@ button {
     cursor: pointer;
     border-radius: 15px;
     transition: background-color 0.3s, transform 0.2s, color 0.3s;
-    margin: 5px 0px; /* Reducimos el margen */
+    margin: 5px 0 0; /* Reducimos el margen y ajustamos el margen inferior a 0 */
+    position: relative; /* Agregamos posición relativa */
+    top: -400px; /* Ajustamos la posición vertical */
 }
 
 button:hover {
@@ -78,6 +80,6 @@ button.animate {
     margin-top: 5px; /* Reducimos el margen-top */
     max-width: 500px;
     width: 80%;
-    max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
+    max-height: 550px; /* Ajusta la altura máxima según tus necesidades */
     
 }
