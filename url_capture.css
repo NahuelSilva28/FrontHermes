@@ -118,6 +118,7 @@ input[type="text"] {
     margin: 20px;
     box-shadow: 0 0 10px #000;
     margin: 20px auto;
+    border-radius: 10px;
 }
 
 .box-container {
