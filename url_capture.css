@@ -43,7 +43,6 @@ body {
     background-color: #3c3c3c;
     border-radius: 20px;
     margin-top: 30px;
-
 }
 
 h1, p {
@@ -59,7 +58,7 @@ h1, p {
     cursor: pointer;
     border-radius: 20px;
     transition: background-color 0.3s, transform 0.2s, color 0.3s;
-    margin: 20px 100px; /* Modificado para centrar verticalmente */
+    margin: 20px auto; /* Center the button horizontally with auto margin */
 }
 
 .start-button:hover {
@@ -113,13 +112,12 @@ footer {
 
 input[type="text"] {
     padding: 15px;
-    width: 100%;
-    border: none;
-    border-radius: 10px;
+    width: calc(100% - 40px);
     background-color: #fff;
     font-size: 16px;
-    margin: 20px 0; /* Modificado para centrar verticalmente */
+    margin: 20px;
     box-shadow: 0 0 10px #000;
+    margin: 20px auto;
 }
 
 .box-container {
@@ -135,19 +133,20 @@ input[type="text"] {
     box-shadow: 0 0 10px #496ddb;
 }
 
-
 .label-url {
     color: #ffffff;
 }
 
-/* Agregamos una consulta de medios para dispositivos más pequeños */
-@media only screen and (max-width: 600px) {
+/* Media query for smaller devices */
+@media only screen and (max-width: 1024px) {
     .start-button {
         padding: 10px 20px;
     }
 
     input[type="text"] {
         padding: 10px;
+        margin: 10px;
+        width: calc(100% - 20px);
         border-radius: 20px;
     }
 }
